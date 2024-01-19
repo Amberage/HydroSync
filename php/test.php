@@ -1,7 +1,5 @@
 <?php
-include 'config.php';
-
-$horaActual = date('Y/m/d H:i');
+include($_SERVER['DOCUMENT_ROOT'] . '/config/config.php');
 
 // Crear la conexión
 $conn = new mysqli($servername, $username, $password, $dbname);

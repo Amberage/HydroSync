@@ -1,9 +1,4 @@
 <?php
-$servername = "localhost"; //192.185.131.25
-$username = "amberage_root";
-$password = "Q2om%)?H.sAQV(r(MD";
-$dbname = "amberage_kukultech";
-
 $horaActual = date('Y/m/d H:i');
 
 // Crear la conexión
