@@ -1,0 +1,56 @@
+/* Fuente Regular */
+@font-face {
+    font-family: 'GillSansMT';
+    src: url('/assets/fonts/GillSansMT/GillSansMT-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Fuente Negrita (Bold) */
+  @font-face {
+    font-family: 'GillSansMT';
+    src: url('/assets/fonts/GillSansMT/GillSansMT-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  /* Fuente Itálica */
+  @font-face {
+    font-family: 'GillSansMT';
+    src: url('/assets/fonts/GillSansMT/GillSansMT-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+  /* Fuente Negrita-Itálica (Bold Italic) */
+  @font-face {
+    font-family: 'GillSansMT';
+    src: url('/assets/fonts/GillSansMT/GillSansMT-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  /* Estilos de fuente */
+.regular {
+    font-family: 'GillSansMT', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  .bold {
+    font-family: 'GillSansMT', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  .italic {
+    font-family: 'GillSansMT', sans-serif;
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+  .bold-italic {
+    font-family: 'GillSansMT', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+  }
