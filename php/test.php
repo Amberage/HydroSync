@@ -25,7 +25,7 @@ if ($hydrosync_devices) {
     $row = $hydrosync_devices->fetch_assoc();
     $tokenBBDD = $row['tokenAuth'];
 } else {
-    echo "El numero de serie del dispositivo es invalido, contacte con un administrador."
+    echo "El numero de serie del dispositivo es invalido, contacte con un administrador.";
 }
 
 if ($tokenAuth === $tokenBBDD) {
@@ -35,7 +35,7 @@ if ($tokenAuth === $tokenBBDD) {
     $releState = $releState;
     $systemMessage = $systemMessage;
 
-    // Insertar los datos en la tabla "test"
+    // Insertar los datos en la tabla
     $sql = "INSERT INTO hydrosync_logs (serialNumber_device, waterLevel, releState, systemMessage, dateLog) 
             VALUES ('$serialNumber_device', '$waterLevel', '$releState', '$systemMessage', '$horaActual')";
 
