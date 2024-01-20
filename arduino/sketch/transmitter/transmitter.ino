@@ -24,7 +24,7 @@ const int INTEGRATED_LED = 8; // Led interno
 
 /*Parametros del dispositivo*/
 const String serialNumber = "HT01MX";
-const String defaultTA = "xj0]-5J;gdu8lO8#";
+const String defaultAT = "xj0]-5J;gdu8lO8#";
 
 
 /*Parametros de conexión WiFi*/
@@ -32,7 +32,7 @@ char* ssid = "Lancelot";
 char* password = "GVRA_313352971";
 
 /*Informacion que se manda a la BBDD*/
-String tokenAuth = defaultTA;
+String tokenAuth = defaultAT;
 String waterLevel = "";
 String releState = "ON";
 String systemMessage = "";
