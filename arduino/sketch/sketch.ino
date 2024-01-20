@@ -34,7 +34,7 @@ char* password = "GVRA_313352971";
 /*Informacion que se manda a la BBDD*/
 String tokenAuth = defaultTA;
 String waterLevel = "";
-String releState = "";
+String releState = "ON";
 String systemMessage = "";
 
 void setup() {
@@ -67,7 +67,6 @@ void setup() {
 int iterador = 0;
 void loop() {
   waterLevel = String(iterador += 1);
-  waterLevel = String(iterador += 2);
-  waterLevel = String(iterador += 3);
+  systemMessage = String(iterador += 3);
   sendInfo(serialNumber, tokenAuth, waterLevel, releState, systemMessage, 1, 2500);
 }

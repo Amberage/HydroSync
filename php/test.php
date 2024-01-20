@@ -1,5 +1,6 @@
 <?php
 include($_SERVER['DOCUMENT_ROOT'] . '/config/config.php');
+$horaActual = date('Y/m/d H:i');
 
 // Crear la conexión
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -18,7 +19,8 @@ $releState = $_POST['releState'];
 $systemMessage = $_POST['systemMessage'];
 
 /*Obtener el token registrado en la BBDD para el numero de serie del dispositivo que solicita el envio de información. */
-$hydrosync_devices = $conn->query("SELECT tokenAuth FROM hydrosync_devices WHERE serialNumber_device = $serialNumber_device");
+$hydrosync_devices = $conn->query("SELECT tokenAuth FROM hydrosync_devices WHERE serialNumber = '$serialNumber_device'");
+
 if ($hydrosync_devices) {
     $row = $hydrosync_devices->fetch_assoc();
     $tokenBBDD = $row['tokenAuth'];
